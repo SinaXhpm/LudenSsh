@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudenSsh", "LudenSsh\LudenSsh.csproj", "{BD335F00-F276-4915-ADBC-0D5D5FB57C7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD335F00-F276-4915-ADBC-0D5D5FB57C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD335F00-F276-4915-ADBC-0D5D5FB57C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD335F00-F276-4915-ADBC-0D5D5FB57C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD335F00-F276-4915-ADBC-0D5D5FB57C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {771A3591-80E0-413D-AA0B-E673F63AB2D5}
+	EndGlobalSection
+EndGlobal
