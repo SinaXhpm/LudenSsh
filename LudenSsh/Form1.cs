@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Renci.SshNet;
 using System.IO;
 using System.Windows.Forms;
@@ -46,9 +46,9 @@ namespace LudenSsh
             File.AppendAllText(Directory.GetCurrentDirectory() + "\\results.txt",
             "========= START ========= " + Environment.NewLine);
             string[] servers = textBox1.Text.Split('\r');
-            for (int i = 0; i < servers.Count() / 2; i += 2)
+            for (int i = 0; i < servers.Count(); i += 2)
             {
-                textBox2.Text += "[" +DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+ DateTime.Now.Second.ToString() + "] " + await Runcmd(servers[i], servers[i+1],textBox3.Text)+ Environment.NewLine;
+                textBox2.Text += "[" +DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+ DateTime.Now.Second.ToString() + "] " + await Runcmd(servers[i].Trim(), servers[i+1].Trim(),textBox3.Text)+ Environment.NewLine;
             }
             File.AppendAllText(Directory.GetCurrentDirectory() + "\\results.txt",
             "========= FINISH ========= " + Environment.NewLine + "https://github.com/SinaXhpm/LudenSsh" + Environment.NewLine);
