@@ -48,11 +48,11 @@ namespace LudenSsh
             string[] servers = textBox1.Text.Split('\r');
             for (int i = 0; i < servers.Count(); i += 2)
             {
-                textBox2.Text += "[" +DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+ DateTime.Now.Second.ToString() + "] " + await Runcmd(servers[i].Trim(), servers[i+1].Trim(),textBox3.Text)+ Environment.NewLine;
+                textBox2.AppendText("[" + DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+ DateTime.Now.Second.ToString() + "] " + await Runcmd(servers[i].Trim(), servers[i+1].Trim(),textBox3.Text)+ Environment.NewLine);
             }
             File.AppendAllText(Directory.GetCurrentDirectory() + "\\results.txt",
             "========= FINISH ========= " + Environment.NewLine + "https://github.com/SinaXhpm/LudenSsh" + Environment.NewLine);
-            textBox2.Text += "Results Saved - Results.txt" + Environment.NewLine;
+            textBox2.AppendText("Results Saved - Results.txt" + Environment.NewLine);
             button2.Enabled = true;
         }
     }
